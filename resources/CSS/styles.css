@@ -1,0 +1,9 @@
+html { 
+    background: url(../Img/code3.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
