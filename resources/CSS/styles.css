@@ -24,6 +24,11 @@ body {
     flex-direction: column;
 }
 
+section {
+    padding: var(--spacing-3) 0;
+  }
+  
+
 /*header*/
 
 nav {
@@ -87,4 +92,12 @@ nav {
     font-size: 2em;
     width: 2em;
     margin-top: var(--spacing-1);
+}
+
+/*footer section*/
+
+footer {
+    margin-top: auto;
+    padding: var(--spacing-2) 0;
+    text-align: center;
 }
