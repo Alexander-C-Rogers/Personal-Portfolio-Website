@@ -69,3 +69,22 @@ nav {
 .project a:hover {
     color: blue;
 }
+
+/*skills section*/
+
+#logo {
+    margin: 0;
+  }
+  
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+#skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: var(--spacing-1);
+}
