@@ -63,3 +63,9 @@ nav {
 .about-me-text-container {
     margin-right: var(--spacing-3);
 }
+
+/*Project section*/
+
+.project a:hover {
+    color: blue;
+}
