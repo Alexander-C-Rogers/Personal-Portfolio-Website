@@ -14,7 +14,7 @@
                 <h2>Alexander Rogers</h2>
                 <ul class="navigation-items">
                     <li class="navigation-items">
-                        <a href="#about">About me</a>
+                        <a href="#about-me">About me</a>
                     </li>
                     <li class="navigation-items">
                         <a href="#projects">Projects</a></li>
@@ -27,5 +27,35 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <section id="about-me">
+                <div class="about-me-container">
+                    <div class="about-me-text-container">
+                        <h2>About Me</h2>
+                        <p>"I am a new software engineer just starting out. I am a hard worker, soft spoken, and attentive to details. I do struggle because of my Autisim, but do not let it control my life."</p>
+                        <p>"I've been programing for " 
+                            <span id="time-container"></span>
+                            " seconds! "
+                        </p>
+                    </div>
+                    <img src="../resources/Img/me.jpg" alt="Alexander Rogers" class="portrait">
+                </div>
+            </section>
+        </main>
+        <script>
+            const timeContainer = document.getElementById("time-container");
+            const BIRTH_DAY = "09-24-1996";
+            const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+            const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+            setInterval(() => {
+            const now = new Date();
+            const difference = Math.floor(
+                (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+            );
+
+            timeContainer.innerText = intlNumberFormatter.format(difference);
+            }, 1000);
+        </script> 
     </body>
 </html>

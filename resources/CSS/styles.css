@@ -44,3 +44,22 @@ nav {
 .navigation-item {
     margin: var(--spacing-1);
 }
+
+/*about me section*/
+
+.portrait {
+    height: 150px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #ff3333;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+}
+
+.about-me-container {
+    display: flex;
+}
+  
+.about-me-text-container {
+    margin-right: var(--spacing-3);
+}
